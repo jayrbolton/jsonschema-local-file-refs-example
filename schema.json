@@ -5,7 +5,7 @@
     "additionalProperties": false,
     "required": ["amount", "product_id"],
     "properties": {
-        "amount": {"$ref": "schema_base.json#definitions/currency"},
-        "product_id": {"type": "integer"}
+        "amount": {"$ref": "http://example.com/schemas/defs1.json#/definitions/currency"},
+        "product_id": {"$ref": "http://example.com/schemas/defs2.json#/definitions/product_id"}
     }
 }
