@@ -1,11 +1,12 @@
 {
+    "$id": "{base}/schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Product Order",
     "type": "object",
     "additionalProperties": false,
     "required": ["amount", "product_id"],
     "properties": {
-        "amount": {"$ref": "http://example.com/schemas/defs1.json#/definitions/currency"},
-        "product_id": {"$ref": "http://example.com/schemas/defs2.json#/definitions/product_id"}
+        "product_id": {"$ref": "{remote1}/defs.json#/definitions/product_id"},
+        "amount": {"$ref": "{base}/base/defs1.json#/definitions/currency"}
     }
 }
