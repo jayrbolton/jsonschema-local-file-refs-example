@@ -5,6 +5,6 @@
     "required": ["amount", "product_id"],
     "properties": {
         "amount": {"type": "integer"},
-        "product_id": {"$ref": "ref2.json"}
+        "product_id": {"$ref": "ref2.yaml"}
     }
 }
